@@ -2,9 +2,20 @@ $(document).ready(
 
 function() {
 
+var enteredString = prompt("Please supply a number", "enter number here");
+
+var enteredNumber = parseInt(enteredString, 10);
+
+assignment2(enteredNumber);
+
 var msg;
 
-for (i = 1; i < 101; i++) {
+    
+});
+
+function assignment2 (number) {
+
+for (i = 1; i <= number; i++) {
 	if (i % 15 == 0) {
 		msg = 'fizz buzz';
 		$('#value').append(msg + '<br/>' );
@@ -29,5 +40,5 @@ for (i = 1; i < 101; i++) {
 		}
 
 }
-    
-});
+
+}
